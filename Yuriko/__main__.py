@@ -381,11 +381,7 @@ def yurikorobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "yurikorobot_":
         query.message.edit_caption(
-            """ *YURIKO* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of Yuriko.`
-            
-            \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
-            \n`Report error/bugs click the Button`""",
+            "*INNEXIA* - `A bot to manage your groups with additional features!`\n`Here the basic help regarding use of Yuriko.`\n`Almost all modules usage defined in the help menu, checkout by sending` `/help`\n`Report error/bugs click the Button`",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
