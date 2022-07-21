@@ -334,7 +334,6 @@ def help_button(update, context):
             query.message.edit_caption(
                 text,
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                 ),
@@ -388,7 +387,6 @@ def yurikorobot_about_callback(update, context):
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
             \n`Report error/bugs click the Button`""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -427,7 +425,6 @@ def yurikorobot_about_callback(update, context):
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -457,7 +454,6 @@ def yurikorobot_about_callback(update, context):
             f"\n✗ `Lets set a welcome message to welcome new users coming to your group.`"
             f"\n✗ `send` `/setwelcome [message]` `to set a welcome message!`",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
             ),
@@ -488,7 +484,6 @@ def yurikorobot_about_callback(update, context):
             f"\n\n✗ *Lets Enjoy The Yuriko Music And Join Support Group @DeCode_Support*"
             f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")]]
             ),
@@ -505,7 +500,6 @@ def yurikorobot_about_callback(update, context):
             f"\n✗ `Lets set a welcome message to welcome new users coming to your group.`"
             f"\n✗ `send` `/setwelcome [message]` `to set a welcome message!`",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
             ),
