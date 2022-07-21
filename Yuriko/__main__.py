@@ -332,7 +332,7 @@ def help_button(update, context):
                 + HELPABLE[module].__help__
             )
             query.message.edit_caption(
-                text=text,
+                text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
@@ -343,7 +343,7 @@ def help_button(update, context):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             query.message.edit_caption(
-                text=HELP_STRINGS,
+                HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(curr_page - 1, HELPABLE, "help")
@@ -353,7 +353,7 @@ def help_button(update, context):
         elif next_match:
             next_page = int(next_match.group(1))
             query.message.edit_caption(
-                text=HELP_STRINGS,
+                HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(next_page + 1, HELPABLE, "help")
@@ -362,7 +362,7 @@ def help_button(update, context):
 
         elif back_match:
             query.message.edit_caption(
-                text=HELP_STRINGS,
+                HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, HELPABLE, "help")
@@ -382,7 +382,7 @@ def yurikorobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "yurikorobot_":
         query.message.edit_caption(
-            text=""" *YURIKO* - `A bot to manage your groups with additional features!`
+            """ *YURIKO* - `A bot to manage your groups with additional features!`
             \n`Here the basic help regarding use of Yuriko.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
@@ -419,7 +419,7 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_basichelp":
         query.message.edit_caption(
-            text=f"*Here's basic Help regarding* *How to use Me?*"
+            f"*Here's basic Help regarding* *How to use Me?*"
             
             f"\n\n✗ `Firstly Add` {dispatcher.bot.first_name} `to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n✗ `After adding promote me manually with full rights for faster experience.`\n"
@@ -447,7 +447,7 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_admin":
         query.message.edit_caption(
-            text=f"*Let's Make Your Group Bit Effective Now*"
+            f"*Let's Make Your Group Bit Effective Now*"
             
             f"\n✗ `Congragulations, YurikoBot now ready to manage your group.`"
             f"\n\n*Admin Tools*"
@@ -465,7 +465,7 @@ def yurikorobot_about_callback(update, context):
 
     elif query.data == "yurikorobot_notes":
         query.message.edit_caption(
-            text=f"<b> Setting Up Notes</b>"
+            f"<b> Setting Up Notes</b>"
             
             f"\n✗ `You can save message/media/audio or anything as notes`"
             f"\n✗ `to get a note simply use` # `at the beginning of a word`"
@@ -477,7 +477,7 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_asst":
         query.message.edit_caption(
-            text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
+            f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
             f"\n*SETUP ASSISTANT*"
             f"\n\n✗ `1.) first, add me to your group.`"
@@ -495,7 +495,7 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_admin":
         query.message.edit_caption(
-            text=f"*Let's Make Your Group Bit Effective Now*"
+            f"*Let's Make Your Group Bit Effective Now*"
             
             f"\n✗ `Congragulations, YurikoBot now ready to manage your group.`"
             f"\n\n*Admin Tools*"
@@ -512,7 +512,7 @@ def yurikorobot_about_callback(update, context):
         )    
     elif query.data == "yurikorobot_support":
         query.message.edit_caption(
-            text="* YURIKO Support Chats*"
+            "* YURIKO Support Chats*"
             
             "\n\n✗ `Join Support Group/Channel`",
             parse_mode=ParseMode.MARKDOWN,
@@ -535,7 +535,7 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_credit":
         query.message.edit_caption(
-            text=f"<b> CREDIT FOR YURIKO DEV'S</b>\n"
+            f"<b> CREDIT FOR YURIKO DEV'S</b>\n"
             
             f"\n`✗ Here Some Developers Helping in Making The Yuriko Bot`",
             parse_mode=ParseMode.HTML,
