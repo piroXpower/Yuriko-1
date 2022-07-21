@@ -1239,8 +1239,6 @@ __help__ = """
 
 ✗ /welcome - `<on/off> enable/disable welcome messages.`
 
-✗ /welcome - `shows current welcome settings.`
-
 ✗ /welcome - `noformat shows current welcome settings, without the formatting - useful to recycle your welcome messages!`
 
 ✗ /goodbye - `same usage and args as `/welcome`.`
