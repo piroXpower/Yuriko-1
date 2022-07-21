@@ -318,15 +318,12 @@ __help__ = """
 ✗ /slap - `slap a user, or get slapped if not a reply`
 
 ✗ /shrug - `get shrug XD`
-
 ✗ /table - `get flip/unflip :v`
 
 ✗ /decide - `Randomly answers yes/no/maybe`
 
 ✗ /toss - `Tosses A coin`
-
 ✗ /bluetext - `check urself :V`
-
 ✗ /roll - `Roll a dice`
 
 ✗ /rlg - `Join ears,nose,mouth and create an emo ;-;`
@@ -338,7 +335,6 @@ __help__ = """
 ✗ /sanitize - `always use this before /pat or any contact`
 
 ✗ /pat - `pats a user, or get patted`
-
 ✗ /8ball - `predicts using 8ball method`
 
 *Animation*
@@ -352,19 +348,16 @@ __help__ = """
 *Here Is The Help For The Styletext Module:*
 
 ✗ /weebify - `<text>: weebify your text!`
-
 ✗ /bubble - `<text>: bubble your text!`
 
 ✗ /fbubble - `<text>: bubble-filled your text!`
 
-✗ /square - `<text>: square your text!`
 
 ✗ /fsquare - `<text>: square-filled your text!`
 
+✗ /square - `<text>: square your text!`
 ✗ /blue - `<text>: bluify your text!`
-
 ✗ /latin - `<text>: latinify your text!`
-
 ✗ /lined - `<text>: lined your text!`
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
