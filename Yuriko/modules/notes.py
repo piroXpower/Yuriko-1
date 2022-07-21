@@ -569,15 +569,6 @@ __help__ = """
 
 ✗ /save - `<notename> save the replied message as a note with name notename`
 
- `Separate diff replies by` `%%%` `to get random notes`
-
- *Example:*
- `/save notename
- Reply 1
- %%%
- Reply 2
- %%%
- Reply 3`
 ✗ /clear - `<notename> clear note with this name`
 
 ✗ /removeallnotes - `removes all notes from the group`
